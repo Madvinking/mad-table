@@ -1,0 +1,19 @@
+{
+  "name": "mad-table",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf node_modules dist yarn.lock package-lock.json",
+    "serve": "parcel src/index.html",
+    "watch": "nodemon --watch src --exec yarn serve",
+    "prebuild": "rm -rd dist",
+    "build": "parcel build src/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@webcomponents/webcomponentsjs": "^2.2.10"
+  }
+}

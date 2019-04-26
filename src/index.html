@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>
+  <script src="./table/madTable.js" type="module" ></script>
+  <title>mad</title>
+</head>
+<body>
+  <mad-table id="haha" title="hola" selectable favorites rows="5" columns="name:40,age:40">
+      <mad-table-col header="Name" path="name" sortable width="40"></mad-table-col>
+      <mad-table-col  path="age" width="40"></mad-table-col>
+  </mad-table>
+  <script>
+  setTimeout(() => {
+    const aaa = document.getElementById('haha');
+    const data =  [
+      { name: "nir", age: 10 },
+      { name: "avi", age: 20},
+      { name: "gl", age: 30},
+      { name: "asdasd", age: 34},
+      { name: "dsamiv", age: 22},
+      { name: "dsamc", age: 25},
+      { name: "qwec", age: 26},
+      { name: "cxzc", age: 27},
+      { name: "kdcds", age: 77},
+      { name: "ixzuc", age: 70},
+      { name: "xzncw", age: 88},
+      { name: "wwdc", age: 28},
+      { name: "rtgvnc", age: 48},
+      { name: "cmsdfn", age: 20}
+
+    ]
+
+  aaa.items = data;
+
+  aaa.click((rowData, element) => {
+
+    })
+  }, 1000);
+
+  </script>
+</body>
+</html>
