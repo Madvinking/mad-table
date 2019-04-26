@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "clean": "rm -rf node_modules dist yarn.lock package-lock.json",
+    "clean": "rm -rf node_modules dist .cache yarn.lock package-lock.json",
     "serve": "parcel src/index.html",
     "watch": "nodemon --watch src --exec yarn serve",
     "prebuild": "rm -rd dist",
